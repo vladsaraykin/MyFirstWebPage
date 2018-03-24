@@ -10,18 +10,18 @@
     justify-content: space-between;
 }
 .footer_author {
-    line-height: 60px;
-    margin-left: 30px;
+    display: inline-block;
+    padding: 20px;
 }
 
-.footer__social {
+.footer_social {
+    display: inline-block;
     fill: #ffffff;
-    position: relative;
-    padding-top: 22px;
+    padding: 20px;
 }
-.footer__feedback {
-    line-height: 60px;
-    margin-right: 30px;
+.footer_feedback {
+    display: inline-block;
+    padding: 20px;
     color: #ffffff;
 }
 form {

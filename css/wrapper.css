@@ -20,11 +20,11 @@ aside{
     max-height: 200px;
     float: right;
     padding: 10px 0px 0px 20px;
+    background:  #f7f7f7;
 }
  aside section{
      padding: 10px;
      background: white;
-
 }
 #img{
     width: 700px;
@@ -51,13 +51,13 @@ article{
 }
 .section-last-text{
     border: 2px solid #f5b671;
-    -webkit-box-shadow: 3px 3px 0px #f5b671;
     box-shadow: 3px 3px 0px #f5b671;
     text-align: center;
     font-size: 22px;
     color: #333333;
     padding: 5px 0;
 }
+
 .section-subscribe{
     border: 2px solid #f5b671;
     -webkit-box-shadow: 3px 3px 0px #f5b671;
@@ -66,6 +66,13 @@ article{
     font-size: 22px;
     color: #333333;
     padding: 5px 0;
+
+}
+.subscribe-form{
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    margin-left : 0%;
 }
 .section-category-sidebar{
     display: flex;
@@ -73,6 +80,14 @@ article{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.disp_email {
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    width: 90%;
+    vertical-align: middle;
 }
 .section-category-sidebar a{
     color: #333333;
@@ -84,4 +99,26 @@ article{
 }
 #last-text{
     padding: 10px;
+}
+#lastTextFigure{
+    display: block;
+    margin-left: 0%;
+}
+#subscribeBtn{
+    border: none;
+    background: white;
+    padding-top: auto;
+    margin-left: -15%;
+}
+
+figure a {
+    position: absolute;
+    padding-left: 5px;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    color: #333333;
+    font-weight: 400;
 }

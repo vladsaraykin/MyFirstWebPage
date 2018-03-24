@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/wrapper.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +20,7 @@
         <span>G</span>
         <span>O</span>
     </div>
-    <nav class="head-menu">
+    <nav class="head-menu" style="font-family: 'Roboto', sans-serif;">
         <ul>
             <li><a href="index.html">БЛОГ</a></li>
             <li><a href="index.html">ПОРТФОЛИО</a></li>
@@ -28,7 +29,14 @@
     </nav>
     <div class="search">
         <input type="text" class="search__input" placeholder="Искать на сайте...">
-        <button type="button"> <img src=""></button>
+        <button type="button" class="button">
+            <svg fill="#ef5f47" height="24" viewBox="0 0 24 24" width="24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+        </button>
+
     </div>
 
 </header>
@@ -36,53 +44,58 @@
     <div class="content">
         <img id="img" src="img/photo.jpg">
 
-        <article>
+        <article class="post-text">
             <a href="index.html" class="post">Дизайн</a>
             <h2>Весна</h2>
-            <p>Очень богат русский язык словами, относящимися к временам года и к природным явлениям, с ними связанным.</p>
-            <p>Возьмем хотя бы раннюю весну. У нее, у этой еще зябнущей от последних заморозков девочки-весны, есть в котомке много хороших слов.</p>
-            <p>Начинаются оттепели, ростепели, капели с крыш. Снег делается зернистым, ноздреватым, оседает и чернеет. Его съедают туманы.
-            Постепенно развозит дороги, наступает распутица, бездорожье. На реках появляются во льду первые промоины с черной водой,
+            <p>Очень богат русский язык словами, относящимися к временам года и к природным явлениям, с ними
+                связанным.</p>
+            <p>Возьмем хотя бы раннюю весну. У нее, у этой еще зябнущей от последних заморозков девочки-весны, есть в
+                котомке много хороших слов.</p>
+            <p>Начинаются оттепели, ростепели, капели с крыш. Снег делается зернистым, ноздреватым, оседает и чернеет.
+                Его съедают туманы.
+                Постепенно развозит дороги, наступает распутица, бездорожье. На реках появляются во льду первые промоины
+                с черной водой,
                 а на буграх - проталины и проплешины. По краю слежавшегося снега уже желтеет мать-и-мачеха.</p>
         </article>
     </div>
-    <aside >
+    <aside style="font-family: 'Roboto', sans-serif;">
         <section id="category">
-                <div class="section-category">Категории</div>
-                <div class="section-category-sidebar">
-                    <a href=""><img src="arrow.svg">Дизайн <span>(2)</span></a>
-                    <a href=""><img src="arrow.svg">Вёрстка <span>(5)</span></a>
-                    <a href=""><img src="arrow.svg">Видео <span>(1)</span></a>
-                </div>
+            <div class="section-category">Категории</div>
+            <div class="section-category-sidebar">
+                <a href=""><img src="arrow.svg">Дизайн <span>(2)</span></a>
+                <a href=""><img src="arrow.svg">Вёрстка <span>(5)</span></a>
+                <a href=""><img src="arrow.svg">Видео <span>(1)</span></a>
+            </div>
         </section>
         <section id="last-text">
-                <div class="section-last-text">Последние записи</div>
-                <div class="section-last-text-sidebar">
-                    <figure>
-                        <img src="img/vesna.jpg">
-                        <a href="index.html">Весна</a>
-                    </figure>
-                    <figure>
-                        <img src="img/лето.jpg">
-                        <a href="index.html">Лето</a>
-                    </figure>
-                    <figure>
-                        <img src="img/осень.jpg">
-                        <a href="index.html">Осень</a>
-                    </figure>
+            <div class="section-last-text">Последние записи</div>
+            <div class="section-last-text-sidebar">
 
-
-                </div>
+                <figure id = "lastTextFigure">
+                    <img src="img/vesna.jpg">
+                    <a href="index.html">Весна</a>
+                </figure>
+                <figure id = "lastTextFigure">
+                    <img src="img/лето.jpg">
+                    <a href="index.html">Лето</a>
+                </figure>
+                <figure id = "lastTextFigure">
+                    <img src="img/осень.jpg">
+                    <a href="index.html">Осень</a>
+                </figure>
+            </div>
         </section>
         <section id="subscribe">
             <div class="section-subscribe">Подписка на рассылку</div>
+            <form class="subscribe-form">
                 <input type="email" placeholder="Ваш email" class="disp_email">
-
-                <svg fill="#ff4f4a" height="24" class="disp_icon" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <svg id="subscribeBtn" fill="#ff4f4a" viewBox="0 0 24 24" height="20" width="20"
+                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
                     <path d="M0 0h24v24H0z" fill="none"/>
                 </svg>
 
+            </form>
         </section>
     </aside>
 </div>
